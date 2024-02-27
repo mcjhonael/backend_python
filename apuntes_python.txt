@@ -1,0 +1,103 @@
+fix:arreglar un error en su codigo base
+feat: introduce a nueva funcionalidad al codigo base
+breaking change: es un cambio bien fuerte en una api como ejemplo en el login ya no te pide el correo si no el numero de DNI para loggearte o cuando cambiamos el metodo de envio en la token ya no bear si no auth
+build: cuando construyamos una version estable de nuestro codigo 
+chore: se cuando cuando hacemos algo muy significavo algo que no tengo mucho valor 
+docs: agregas documentacion de codigo
+style: agregas estilos 
+refactor: no a hay un cambio funcional en el API ejemplo cuando mejoras alguna busca de personas o buscas la tasa de credito de una persona algo asi 
+test:para agregar el testing a nuestra aplicacion 
+retroceder del stating area => working directory 
+git rm --cached ubication_file
+todos los git logs tienes un hash que vendria hacer un identificador lo que se ha realizado en el commit
+git log -p :para saber que es lo que sea realiazo en es codigo detale 
+python es un lenguaje que todo lo maneja en clases class <str>
+str(variable)= convierte la variable en tipo str
+resultado = input("ingresa tu nombre ") siempre va tener como resultado tipo de dato str por que resultado es str 
+numero += 1 :aumentara +1 al numero
+== es igual que
+=== no existe en python 
+los boleanos empiezan en mayuscula True False
+el y es and para el lenguaje de python
+el o es or para el lenguaje de python
+
+el metodo is() permite que comparar una variable de otra pero comparaciones con la posicion de memoria no de valores x lo cual si es la misma posicion de memoria entonces arroja True si no False
+print(id(variable))
+la unica manera en que podamos hacer una copia de memoria es igualandolo a una nueva variable
+frutas=['caramelo','melon']
+frutas2=frutas
+print(frutas2 is frutas) //True
+las variables que son colecciones de datos como listas, tuplas y diccionarios son variables mutables
+las variables (int,str,float,etc) son variables inmutables
+cuiado por que cuando a frutas2.append('fresa')
+e imprimo frutas lo que sucede es que el valor agregado en frutas tbm se ve agregado ahi o sea el padre comparte la misma info del hijo x lo cual es mejor es destructurarlo cuidado
+es lo mismo para is not
+
+para solucionar el problema anterior de la posicion de memoria usamos el metodo copy()
+frutas_variadas=frutas.copy() // hace una copia del contenido de nuestra lista y la coloca en otra posicion de memoria 
+
+colecciones de datos = podemos guardar muchos datos 
+listas ordenadas y modificadas
+colores=['morado','canela','rosado'] TODOS TIENEN UNA POSICION DE MEMORIA 
+mezclada=['marfil',12,True,34.3]
+en python todo son exception o errores pero en JS son undefined
+para imprimir de atras hacia delante de una lista usamos los signos negativos en JS no permite esas cosas posiciones negativas
+print(mezclada[-1])// rosado
+colores[1:2] traeme desde la posicion 1 hasta la posicion que sea menor a 2  en este caso solo traera el valor de la posicion 1
+colores[1:] // traeme los datos de la posicion 1 hasta el final canela,rosado
+colores[:2] //traeme hasta la posicion <2
+para poder hacer una copia de contenido tambien podemos hacerlo de esta manera mas no su posicion de memoria 
+colores2=colores[:]
+
+#metodo para agregar un elemento a una lista
+colores.append('naranja')
+#permite buscar el valor para eliminarlo si no lo encuentra enviara un error de tipo ValueError y si lo encuentra esta bien
+colores.remove("valor")
+
+color_eliminado=colores.pop(0)//eliminar y guardar un valor eliminado de una variable en la posicion indicada
+print(color_eliminado)
+
+otro metodo para eliminar el valor tambien sirve para eliminar las variables
+nombre="jhon"
+del nombre
+print(nombre) //variable no existe
+
+del colores[0]//elimina el valor de la posicion indicada 
+print(colores)
+
+longitud de mis variables ya sea lista o cualquier tipo de variable
+longitud= cantidad de elementos en una coleccion de datos
+print(len(colores))
+
+tuplas a diferencia de las lista es una coleccion de datos ordenados pero que una vez creado no se puede editar no puedes agregar no puedes modificar no puedes eliminar y se utiliza los parentesis
+puedes eliminar la variable x completo pero no hacer operaciones en ellos
+si podemos 
+notas=(10,14,12,15,65)
+
+print(colores.count(valor))//cout sirve para saber cuantas veces se repite un valor 
+
+DICCIONARIOS=JSON
+coleccion de datos ordenados pero no por indices ya que se maneja un ordenamiento segun su clave-valor, se puede modificar
+
+persona={
+    'nombre':'jhon',
+    'apellido':'maquera',
+    'edad':29,
+    'correo':'correo@correo.com',
+    'hobbies':[
+        {
+            'nombre':"volar drones",
+            "conocimiento":"avanzado"
+        },
+        {
+            'nombre':"montar cicle",
+            'conocimiento':"intermedio"
+        }
+    ]
+}
+print(persona['nombre']) //la unica manera de acceder a los diccionarios son atraves de los atributos pero si usamos punto persona.nombre esto dira como si fuera una clase que desea acceder a su metodo o atributo nombre cosa que no funciona aqui
+persona['edad']=35 //podemos editar
+persona['nacionalidad']='chileno' //podemos agregar
+
+imprimir el 1er hobbies de la persona
+persona['hobbies'][0]['nombre']
