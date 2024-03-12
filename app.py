@@ -24,5 +24,12 @@ persona={
         }
     ]
 }
+#retorna un arreglo de las claves de un diccionario
+print(persona.keys())
+
+#retorna un arreglo de todos los valores de una diccionario
+print(persona.values())
 print(persona['nombre'])
 print(persona['hobbies'][0]['nombre'])
+
+print("limpiar la lista {}".format(persona.clear()))

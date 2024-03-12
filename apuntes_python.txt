@@ -101,3 +101,18 @@ persona['nacionalidad']='chileno' //podemos agregar
 
 imprimir el 1er hobbies de la persona
 persona['hobbies'][0]['nombre']
+
+#retorna un arreglo de las claves de un diccionario
+print(persona.keys())
+
+#retorna un arreglo de todos los valores de una diccionario
+print(persona.values())
+
+#se encarga de colocar la lista a vacia
+print("limpiar la lista {}".format(persona.clear()))
+
+creas 1 nueva rama agregas todo esto a la nueva rama ojo
+git checkout -b semana01
+git add .
+git commit -m ""
+git push origin semanan01
