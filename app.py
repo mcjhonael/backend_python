@@ -33,3 +33,9 @@ print(persona['nombre'])
 print(persona['hobbies'][0]['nombre'])
 
 print("limpiar la lista {}".format(persona.clear()))
+
+#para almacenar valores sin la necesidad de llaves
+cursos={'matematica','cta','biologia','comunicacion'}
+print(cursos)
+
+#condicionales
