@@ -143,3 +143,9 @@ def indeterminada(**kwargs):
     print(kwargs)
 indeterminada(nombre="pamela")
 
+#^ librerias
+#para trabajar con librerias utilizamos pypi.org aqui encontramos todos las liberias de 
+#pip gestor de paquete para instalar de python
+#pip install camelcase
+
+from camelsace import Camelcase
